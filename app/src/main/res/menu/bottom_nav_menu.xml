@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/homeScreenFragment"
+        android:icon="@drawable/shop_icon"
+        android:title="Home Screen"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/rewardsFragment"
+        android:icon="@drawable/reward_icon"
+        android:title="Rewards"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/orderOngoingFragment"
+        android:icon="@drawable/receipt_icon"
+        android:title="Order"
+        tools:ignore="HardcodedText"/>
+
+</menu>

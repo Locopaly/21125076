@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rewards_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,ContentDescription,SmallSp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Rewards"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.072"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="325dp"
+        android:layout_height="122dp"
+        android:background="@drawable/fifteen_dp_rounded_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Loyalty card"
+            android:textColor="@color/bright_grey"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <TextView
+            android:id="@+id/loyalty_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="4 / 8"
+            android:textColor="@color/bright_grey"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="279dp"
+            android:layout_height="61dp"
+            android:background="@drawable/fifteen_dp_rounded_rectangle"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.721">
+
+            <ImageView
+                android:id="@+id/loyalty_cup_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loyalty_cup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <ImageView
+                android:id="@+id/loyalty_cup_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loyalty_cup"
+                app:layout_constraintStart_toEndOf="@id/loyalty_cup_1"
+                app:layout_constraintTop_toTopOf="@id/loyalty_cup_1" />
+
+            <ImageView
+                android:id="@+id/loyalty_cup_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loyalty_cup"
+                app:layout_constraintStart_toEndOf="@id/loyalty_cup_2"
+                app:layout_constraintTop_toTopOf="@id/loyalty_cup_2" />
+
+            <ImageView
+                android:id="@+id/loyalty_cup_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loyalty_cup"
+                app:layout_constraintStart_toEndOf="@id/loyalty_cup_3"
+                app:layout_constraintTop_toTopOf="@id/loyalty_cup_3" />
+
+            <ImageView
+                android:id="@+id/loyalty_cup_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/not_loyalty_cup"
+                app:layout_constraintStart_toEndOf="@id/loyalty_cup_4"
+                app:layout_constraintTop_toTopOf="@id/loyalty_cup_4"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/loyalty_cup_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/not_loyalty_cup"
+                app:layout_constraintStart_toEndOf="@id/loyalty_cup_5"
+                app:layout_constraintTop_toTopOf="@id/loyalty_cup_5"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/loyalty_cup_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/not_loyalty_cup"
+                app:layout_constraintStart_toEndOf="@id/loyalty_cup_6"
+                app:layout_constraintTop_toTopOf="@id/loyalty_cup_6"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/loyalty_cup_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/not_loyalty_cup"
+                app:layout_constraintStart_toEndOf="@id/loyalty_cup_7"
+                app:layout_constraintTop_toTopOf="@id/loyalty_cup_7"
+                tools:ignore="ImageContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="325dp"
+        android:layout_height="108dp"
+        android:background="@drawable/fifteen_dp_rounded_rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.348">
+
+        <TextView
+            android:id="@+id/my_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Points:"
+            android:textSize="14sp"
+            android:textColor="@color/bright_grey"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.287"/>
+
+        <TextView
+            android:id="@+id/redeem_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2750"
+            android:textSize="24sp"
+            android:textColor="@color/bright_grey"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toBottomOf="@id/my_points"
+            app:layout_constraintStart_toStartOf="@id/my_points"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/redeem"
+            android:layout_width="93dp"
+            android:layout_height="28dp"
+            android:background="@drawable/fifteen_dp_rounded_rectangle"
+            android:backgroundTint="@color/faded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Redeem drinks"
+                android:textColor="@color/bright_grey"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                tools:ignore="TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coffee_bean_pattern"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="66dp"
+            android:layout_marginStart="269dp"
+            tools:ignore="VisualLintBounds" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History Rewards"
+        android:textSize="14sp"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.485"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rewards_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/history"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

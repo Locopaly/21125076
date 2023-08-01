@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="310dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="20dp"
+    tools:ignore="HardcodedText,SmallSp,TextSizeCheck">
+
+    <TextView
+        android:id="@+id/coffee_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Americano"
+        android:textColor="@color/darkblue"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="24 June | 12:30 PM"
+        android:textColor="@color/transparent_grey"
+        android:textSize="10sp"
+        tools:ignore="TextContrastCheck"/>
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+ 12 Pts"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp" />
+
+</androidx.cardview.widget.CardView>

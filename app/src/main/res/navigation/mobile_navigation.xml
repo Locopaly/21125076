@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/orderSuccessFragment"
+        android:name="com.example.order_coffee_app_kotlin.OrderSuccessFragment"
+        android:label="OrderSuccessFragment" >
+        <action
+            android:id="@+id/action_orderSuccessFragment_to_orderOngoingFragment"
+            app:destination="@id/orderOngoingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.order_coffee_app_kotlin.DetailsFragment"
+        android:label="DetailsFragment" >
+        <action
+            android:id="@+id/action_detailsFragment_to_myCartFragment"
+            app:destination="@id/myCartFragment" />
+        <action
+            android:id="@+id/action_detailsFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardsFragment"
+        android:name="com.example.order_coffee_app_kotlin.RewardsFragment"
+        android:label="RewardsFragment" >
+        <action
+            android:id="@+id/action_rewardsFragment_to_redeemFragment"
+            app:destination="@id/redeemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.example.order_coffee_app_kotlin.HomeScreenFragment"
+        android:label="HomeScreenFragment" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_myCartFragment"
+            app:destination="@id/myCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/redeemFragment"
+        android:name="com.example.order_coffee_app_kotlin.RedeemFragment"
+        android:label="RedeemFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.order_coffee_app_kotlin.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.example.order_coffee_app_kotlin.MyCartFragment"
+        android:label="MyCartFragment" >
+        <action
+            android:id="@+id/action_myCartFragment_to_orderSuccessFragment"
+            app:destination="@id/orderSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.example.order_coffee_app_kotlin.OrderHistoryFragment"
+        android:label="OrderHistoryFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.order_coffee_app_kotlin.SplashFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderOngoingFragment"
+        android:name="com.example.order_coffee_app_kotlin.OrderOngoingFragment"
+        android:label="OrderOngoingFragment" >
+        <action
+            android:id="@+id/action_orderOngoingFragment_to_orderHistoryFragment"
+            app:destination="@id/orderHistoryFragment" />
+    </fragment>
+</navigation>

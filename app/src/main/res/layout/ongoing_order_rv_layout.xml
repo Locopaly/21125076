@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="80dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="20dp"
+    tools:ignore="HardcodedText,SmallSp,ContentDescription,TextSizeCheck">
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="24 June | 12:30 PM"
+        android:textColor="@color/transparent_grey"
+        android:textSize="10sp"
+        tools:ignore="TextContrastCheck"/>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/chosen_coffee_size" />
+
+    <TextView
+        android:id="@+id/coffee_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Americano"
+        android:textColor="@color/darkblue"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/location_icon" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="227 Nguyen Van Cu Street, District 5, Ho Chi Minh city"
+        android:textColor="@color/darkblue"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="$3.00"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp" />
+
+</androidx.cardview.widget.CardView>
